@@ -1,0 +1,6 @@
+warehouse_id,warehouse_name,location_id,capacity
+1,warehouse A,6,1228
+2,warehouse B,1,2518
+3,warehouse C,3,1501
+4,warehouse D,2,1285
+5,warehouse E,6,1209
