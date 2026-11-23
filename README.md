@@ -40,7 +40,6 @@ The project uses CSV files representing these logistics entities:
 - **Delivery Partners** — delivery service/partner records
 - **Locations** — location-related records
 
-The database schema and constraints are defined in SQL scripts. Relationships between the entities allow the analysis to combine operational data across tables instead of treating each CSV as an isolated file.
 
 ## Project Workflow
 
@@ -95,7 +94,6 @@ logistics-delivery-performance-analytics/
 └── requirements.txt
 ```
 
-> Folder names and file paths above reflect the project layout shown in the repository screenshots. Adjust any path if it has changed in the current branch.
 
 
 ## Setup & Run
@@ -195,7 +193,7 @@ These queries are intended for exploring delivery and logistics metrics across t
 streamlit run dashboard/app.py
 ```
 
-Streamlit will print a local URL in the terminal (usually `http://localhost:8501` or `http://localhost:8501` depending on configuration). Open that address in your browser to interact with the dashboard.
+Streamlit will print a local URL in the terminal (usually `http://localhost:8501` or `http://localhost:8501` depending on configuration).
 
 ## Analysis Areas
 
@@ -215,7 +213,6 @@ The precise metrics and conclusions depend on the queries and fields present in 
 The Streamlit dashboard provides a user-facing view of selected logistics metrics and SQL-based analysis. It is connected to PostgreSQL through the dashboard's connection module, while dashboard queries are organized separately to keep database access and query logic distinct from the main UI code.
 
 
-> Add dashboard screenshots here once available, for example: `![Dashboard overview](screenshots/dashboard_overview.png)`
 
 ## Database & SQL Concepts
 
