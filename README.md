@@ -133,7 +133,7 @@ pip install -r requirements.txt
 
 Create a local `.env` file using `.env.example` as a template. Set the connection values to match your PostgreSQL installation and database.
 
-Example configuration (use the variable names expected by the project code):
+Example configuration 
 
 ```env
 DB_HOST=localhost
