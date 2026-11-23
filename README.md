@@ -143,7 +143,6 @@ DB_USER=postgres
 DB_PASSWORD=your_password
 ```
 
-Do not commit real passwords or credentials. The variable names above are illustrative; use the names defined in the project's connection code if they differ.
 
 ### 5. Create the database and tables
 
@@ -206,7 +205,6 @@ The SQL analysis and dashboard are intended to explore operational performance t
 - Which operational segments show signs of weaker delivery performance?
 - How do delivery-related measures vary across time or groups, where the available fields support such analysis?
 
-The precise metrics and conclusions depend on the queries and fields present in the project data.
 
 ## Dashboard
 
