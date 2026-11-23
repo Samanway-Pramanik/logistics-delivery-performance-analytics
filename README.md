@@ -6,7 +6,6 @@ An end-to-end data analytics project that explores logistics and delivery operat
 
 Logistics teams need to monitor delivery performance, understand delays, compare operational segments, and identify where performance needs attention. This project uses a structured logistics dataset to examine delivery and shipment patterns and turn the analysis into accessible dashboard insights.
 
-The workflow covers data generation, database setup, loading CSV data into PostgreSQL, SQL analysis, and dashboard presentation.
 
 ## Objectives
 
@@ -153,8 +152,6 @@ psql -d logistics_db -f database/01_create_tables.sql
 psql -d logistics_db -f database/02_constraints.sql
 ```
 
-If your local setup requires explicit connection parameters, add them to your `psql` command or configure your PostgreSQL connection first.
-
 ### 6. Generate / prepare the source CSV data
 
 Run the data-generation script if you want to recreate the project's CSV data:
@@ -163,7 +160,6 @@ Run the data-generation script if you want to recreate the project's CSV data:
 python src/generate_data.py
 ```
 
-Review the script's output path before running if you want the generated files to replace the existing CSVs.
 
 ### 7. Load CSV data into PostgreSQL
 
@@ -173,7 +169,6 @@ After the database schema is created and the CSV data is available, run:
 python src/load_data.py
 ```
 
-The loader uses the project's database connection configuration to insert data into PostgreSQL. Run it only after verifying that the database and tables are set up.
 
 ### 8. Run SQL analysis
 
@@ -184,7 +179,6 @@ Execute the analytical queries in:
 sql/03_analysis_queries.sql
 ```
 
-These queries are intended for exploring delivery and logistics metrics across the connected tables.
 
 ### 9. Launch the Streamlit dashboard
 
